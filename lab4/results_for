@@ -1,0 +1,10 @@
+function y=results_for(n):
+    n = 2
+    fprintf('Przyklad (10 pierwszych linii) dla n = %d:\n', n)
+    fprintf('-------------------------------------------------------------------------\n')
+    fprintf('\tx\t\ty\t\tf(x)\t\terror (f(x_i)-y_i)\n')
+    fprintf('-------------------------------------------------------------------------\n')
+    for i=1:10
+        fprintf('\t%.3f\t\t%.3f\t\t%.3f\t\t%.6f\n', data(i,1), data(i,2), data_polynomials(i,n), (data_polynomials(i,n)-data(i,n)))
+    end
+end
